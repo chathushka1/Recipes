@@ -12,12 +12,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2jUs3dhvsAm27bjv2XFuhpd6ubh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/GDSE 64/AMD/Project/CauseWork/Recipes",
+    "last_opened_file_path": "D:/GDSE 64/AMD/Project/CauseWork",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,6 +50,7 @@
       <map>
         <entry key="com.haulmont.rcb.reactComponents" value="false" />
         <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -54,11 +62,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721452791368</updated>
-      <workItem from="1721452792432" duration="3017000" />
+      <workItem from="1721452792432" duration="3544000" />
+      <workItem from="1721463621724" duration="45000" />
+      <workItem from="1721463676364" duration="31000" />
+      <workItem from="1721463741667" duration="62000" />
     </task>
+    <task id="LOCAL-00001" summary="create navigation">
+      <option name="closed" value="true" />
+      <created>1721459265394</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721459265394</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="create navigation" />
   </component>
 </project>
