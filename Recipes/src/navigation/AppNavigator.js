@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import WelcomeScreen from '../view/WelcomeScreen';
 import WelcomeScreenView from '../view/RecipeList';
 import {createNativeStackNavigator} from "react-native-screens/native-stack";
+import RecipeList from "../view/RecipeList";
 
 const Stack = createNativeStackNavigator();
 const AppNavigator = () =>{
@@ -12,7 +13,7 @@ const AppNavigator = () =>{
             <Stack.Navigator screenOptions={{
                 headerShown:false}}>
                 <Stack.Screen name="Welcome" component={WelcomeScreen}></Stack.Screen>
-                <Stack.Screen name="RecipeListView" component={}></Stack.Screen>
+                <Stack.Screen name="RecipeListView" component={RecipeList}></Stack.Screen>
             </Stack.Navigator>
         </NavigationContainer>
     )
