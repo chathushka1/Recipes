@@ -3,9 +3,9 @@ import React from "react";
 
 const WelcomeScreen = () =>{
     return (
-        <View style={{ flex: 1, alignItems: "center"}}>
+        <View style={{ flex: 1, alignItems: "center",}}>
             {/*<Text>WelcomeScreen</Text>*/}
-            <Image source={require("../../assets/images/Welcome.jpg")}></Image>
+            <Image source={require("../../assets/images/Lady.jpg")}></Image>
             <Text style={{color:"#f96163", fontSize:22, fontWeight: "bold",}}>New Recipes</Text>
             <Text style={{
                 fontSize:42,
@@ -17,10 +17,16 @@ const WelcomeScreen = () =>{
 
             <TouchableOpacity
                 //onPress={()=>}
-                style={{backgroundColor:"f96163", paddingVertical:18, width:"80%",alignItems:"center",}}>
-                <Text style={{fontSize:18, color: "#fff", fontWeight:"700"}}>
-                    Let's Go</Text>
-
+                style={{
+                    backgroundColor:"#f96163",
+                    borderRadius: 18,
+                    paddingVertical:18,
+                    width:"80%",
+                    alignItems:"center",}}>
+                <Text style={{
+                    fontSize:18,
+                    color: "#fff",
+                    fontWeight:"700"}}>Let's Go</Text>
             </TouchableOpacity>
         </View>
     );
