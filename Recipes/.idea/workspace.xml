@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5b76427-55cc-40df-a450-c410adb4b3f0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/AppNavigator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,7 @@
       <workItem from="1721463676364" duration="31000" />
       <workItem from="1721463741667" duration="62000" />
       <workItem from="1721464859974" duration="683000" />
+      <workItem from="1721502480597" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="create navigation">
       <option name="closed" value="true" />

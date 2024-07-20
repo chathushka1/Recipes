@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native";
-import WelcomeScreen from "../screens/WelcomeScreen";
+import WelcomeScreen from '../view/WelcomeScreen';
+import {createNativeStackNavigator} from "react-native-screens/native-stack";
 
 const Stack = createNativeStackNavigator();
 const AppNavigator = () =>{
