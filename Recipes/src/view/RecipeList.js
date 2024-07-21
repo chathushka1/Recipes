@@ -16,7 +16,7 @@ const RecipeList = () =>{
 
             {/*Categories filter*/}
 
-            <View>
+            <View style={{marginTop: 22}}>
                 <Text style={{fontSize:22, fontWeight:"bold",}}>Categories</Text>
                 {/*Categories List*/}
                 <CategoriesFilter />

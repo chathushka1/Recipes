@@ -41,3 +41,47 @@ export const categories = [
         category:"Seafood",
     },
 ];
+
+export const recipeList = [
+    {
+      id: "01",
+      name: "Tuna Tartare",
+      image: require("../assets/images/Tuna.jpg"),
+      rating: "4.2",
+      ingredients: ["Fresh Tuna", "Lime Juice", "Red wine", "Avacardo"],
+      time: "40 mins",
+      difficulty: "Medium",
+      calories: "420 cal",
+    },
+    {
+        id: "02",
+        name: "Lasagna",
+        image: require("../assets/images/Lasagna.jpg"),
+        rating: "3.6",
+        ingredients: ["Lasagna Noodles", "Ground beef", "Ricotta Cheese", "Tomato Sauce"],
+        time: "40 mins",
+        difficulty: "Medium",
+        calories: "420 cal",
+    },
+    {
+        id: "03",
+        name: "Hot Dog",
+        image: require("../assets/images/HotDog.jpg"),
+        rating: "4.6",
+        ingredients: ["Hot Dog Buns", "Ground beef", "Ricotta Cheese", "Tomato Sauce"],
+        time: "40 mins",
+        difficulty: "Medium",
+        calories: "420 cal",
+    },
+    {
+        id: "04",
+        name: "Manchurian",
+        image: require("../assets/images/Manchurian.jpg"),
+        rating: "3.6",
+        ingredients: ["Cauliflower", "Soy Sauce"],
+        time: "30 mins",
+        difficulty: "Easy",
+        calories: "420 cal",
+    },
+
+];
