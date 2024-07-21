@@ -2,6 +2,7 @@ import {StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView} from "rea
 import React from "react";
 import Header from "../components/Header";
 import SearchFilter from "../components/SearchFilter";
+import CategoriesFilter from "../components/CategoriesFilter";
 
 
 const RecipeList = () =>{
@@ -16,7 +17,9 @@ const RecipeList = () =>{
             {/*Categories filter*/}
 
             <View>
-                <Text style={{fontSize:22, fontWeight:"bold",}}/>
+                <Text style={{fontSize:22, fontWeight:"bold",}}>Categories</Text>
+                {/*Categories List*/}
+                <CategoriesFilter />
             </View>
         </SafeAreaView>
     );
