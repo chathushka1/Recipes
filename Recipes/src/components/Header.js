@@ -4,9 +4,11 @@ import {FontAwesome} from "@expo/vector-icons";
 
 const Header = ({headerText, headerIcon}) =>{
     return (
-        <View>
-        <Text>{headerText}</Text>
-        <FontAwesome icon={headerIcon} size={24} color="#f96163"/>
+        <View style={{flexDirection: "row"}}>
+        <Text style={{flex: 1, fontSize: 22, fontWeight: "700"}}>
+            {headerText}
+        </Text>
+        <FontAwesome name={headerIcon} size={24} color="#f96163"/>
         </View>
     );
 };
