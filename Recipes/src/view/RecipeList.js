@@ -9,7 +9,15 @@ const RecipeList = () =>{
         <SafeAreaView>
             {/*render header*/}
             <Header headerText={"Hi, John"} headerIcon={"bell-o"}/>
+
+            {/*Search Filter*/}
             <SearchFilter icon="search" placeholder={"enter your favourite recipe"}/>
+
+            {/*Categories filter*/}
+
+            <View>
+                <Text style={{fontSize:22, fontWeight:"bold",}}/>
+            </View>
         </SafeAreaView>
     );
 
