@@ -8,7 +8,7 @@ const CategoriesFilter = () =>{
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {categories.map((category, index) =>{
                     return(
-                      <View style={{
+                      <View key={index} style={{
                           backgroundColor: index === 0 ?colors.COLOR_PRIMARY : colors.COLOR_LIGHT,
                           marginRight:36,
                           borderRadius:8,

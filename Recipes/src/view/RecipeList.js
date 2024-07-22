@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import SearchFilter from "../components/SearchFilter";
 import CategoriesFilter from "../components/CategoriesFilter";
+import RecipeCard from "../components/RecipeCard";
 
 
 const RecipeList = () =>{
@@ -20,6 +21,15 @@ const RecipeList = () =>{
                 <Text style={{fontSize:22, fontWeight:"bold",}}>Categories</Text>
                 {/*Categories List*/}
                 <CategoriesFilter />
+            </View>
+
+                {/*Recipe List Filter*/}
+
+
+            <View style={{marginTop: 22}}>
+                <Text style={{fontSize:22, fontWeight:"bold",}}>Categories</Text>
+                {/*Recipe List*/}
+                <RecipeCard />
             </View>
         </SafeAreaView>
     );

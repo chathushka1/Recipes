@@ -83,5 +83,25 @@ export const recipeList = [
         difficulty: "Easy",
         calories: "420 cal",
     },
+    {
+        id: "05",
+        name: "Manchurian",
+        image: require("../assets/images/Manchurian.jpg"),
+        rating: "3.6",
+        ingredients: ["Cauliflower", "Soy Sauce"],
+        time: "30 mins",
+        difficulty: "Easy",
+        calories: "420 cal",
+    },
+    {
+        id: "06",
+        name: "Manchurian",
+        image: require("../assets/images/Manchurian.jpg"),
+        rating: "3.6",
+        ingredients: ["Cauliflower", "Soy Sauce"],
+        time: "30 mins",
+        difficulty: "Easy",
+        calories: "420 cal",
+    },
 
 ];
