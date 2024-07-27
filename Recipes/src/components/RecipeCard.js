@@ -1,6 +1,7 @@
 import {FlatList, StyleSheet, Text, View, Image} from "react-native";
 import React from "react";
 import {colors, recipeList} from "../Constant";
+import {FontAwesome} from "@expo/vector-icons";
 
 
 const RecipeCard = ({headerText, headerIcon}) =>{
@@ -20,12 +21,25 @@ const RecipeCard = ({headerText, headerIcon}) =>{
                         alignItems: "center",
                         paddingHorizontal: 8,
                         paddingVertical: 26,
+                        marginTop:20,
 
                     }}>
                         <Image
                             source={item.image}
-                                style ={{width:150, height:150, resizeMode: "center"}}/>
+                                style ={{width:150, height:150, resizeMode: "center"}}
+                        />
                         <Text>{item.name}</Text>
+                        <View style={{flexDirection:"row", marginTop : 8 }}>
+                            <Text>{item.time}</Text>
+                            <Text> | </Text>
+                            <View style={{flexDirection:"row"}}>
+                                <Text style={{marginRight: 4}}>{item.rating}</Text>
+                                <FontAwesome name="star"
+                                             size={16}
+                                             color={colors.COLOR_PRIMARY}
+                                    />
+                            </View>
+                        </View>
                     </View>
                     }
                 numColumns={2}

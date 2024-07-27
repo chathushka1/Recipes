@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView} from "react-native";
+import {StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView, ScrollView} from "react-native";
 import React from "react";
 import Header from "../components/Header";
 import SearchFilter from "../components/SearchFilter";
@@ -25,12 +25,14 @@ const RecipeList = () =>{
 
                 {/*Recipe List Filter*/}
 
-
-            <View style={{marginTop: 22}}>
-                <Text style={{fontSize:22, fontWeight:"bold",}}>Categories</Text>
+            <View>
+                <Text style={{fontSize:22, fontWeight:"bold",}}>Recipes</Text>
+            </View>
+            <ScrollView style={{marginTop: 22}}>
+                {/*<Text style={{fontSize:22, fontWeight:"bold",}}>Recipes</Text>*/}
                 {/*Recipe List*/}
                 <RecipeCard />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     );
 
