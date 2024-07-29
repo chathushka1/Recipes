@@ -60,7 +60,49 @@ const RecipeDetails = ({navigation, route}) =>{
                 }}>
                     {item.description}
                 </Text>
+                {/*Recipe Extra details*/}
+                <View style={{flexDirection:"row"}}>
+                    <View
+                        style={{
+                            backgroundColor:"orange",
+                            paddingHorizontal:26,
+                            paddingVertical:26,
+                            borderRadius:8,
+                            alignItems:"center",
+                        }}>
+                        <Text style={{fontSize:40}}>⏰</Text>
+                        <Text style={{fontSize:20, fontWeight:400}}>{item.time}</Text>
+
+                    </View>
+                    <View
+                        style={{
+                            backgroundColor:"orange",
+                            paddingHorizontal:26,
+                            paddingVertical:26,
+                            borderRadius:8,
+                            alignItems:"center",
+                        }}>
+                        <Text style={{fontSize:40}}>🍽</Text>
+                        <Text style={{fontSize:20, fontWeight:400}}>{item.difficulty}</Text>
+
+                    </View>
+                    <View
+                        style={{
+                            backgroundColor:"orange",
+                            paddingHorizontal:26,
+                            paddingVertical:26,
+                            borderRadius:8,
+                            alignItems:"center",
+                        }}>
+                        <Text style={{fontSize:40}}>🔥</Text>
+                        <Text style={{fontSize:20, fontWeight:400}}>{item.calories}</Text>
+
+                    </View>
+
+                </View>
+
             </View>
+
         </View>
     );
 };
