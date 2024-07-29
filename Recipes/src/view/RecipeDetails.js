@@ -137,6 +137,37 @@ const RecipeDetails = ({navigation, route}) =>{
 
                 </View>
 
+                {/*Recipe Steps*/}
+                <View style={{alignSelf:"flex-start", marginVertical:22}}>
+                    <Text style={{fontSize:22, fontWeight:"600", marginBottom:6}}>Steps:</Text>
+                    {item.steps.map((step)=>{
+                        return(
+                            <View
+                                style={{
+                                    flexDirection:"row",
+                                    alignItems:"center",
+                                    marginVertical:4,
+                                }}>
+                                <View
+                                    style={{
+                                        backgroundColor:"green",
+                                        height:10,
+                                        width:10,
+                                        borderRadius:5
+                                    }}>
+                                </View>
+                                <Text
+                                    style={{
+                                        fontSize:18,
+                                        marginLeft:6 }}>
+                                    {step}
+                                </Text>
+                            </View>
+                        );
+                    })}
+
+                </View>
+
             </View>
 
         </ScrollView>
