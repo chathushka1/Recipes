@@ -26,6 +26,8 @@ const RecipeDetails = ({navigation, route}) =>{
                     marginTop:240,
                     borderTopLeftRadius:56,
                     borderTopRightRadius:56,
+                    alignItems:"center",
+                    paddingHorizontal:16,
                 }}>
                 <View style={{
                     //backgroundColor:"red",
@@ -40,6 +42,24 @@ const RecipeDetails = ({navigation, route}) =>{
                         source={item.image}
                         style={{width:"100%", height:"100%", resizeMode:"contain"}}/>
                 </View>
+                {/*Recipe Name*/}
+                <Text
+                    style={{
+                        marginTop:130,
+                        fontSize:28,
+                        fontWeight:"bold",
+
+                }}>{item.name}
+                </Text>
+
+                {/*Description*/}
+                <Text
+                    style={{
+                        fontSize:20,
+                        marginVertical:16,
+                }}>
+                    {item.description}
+                </Text>
             </View>
         </View>
     );
