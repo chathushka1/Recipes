@@ -2,7 +2,10 @@ import {Image, Pressable, SafeAreaView, StyleSheet, Text, View} from "react-nati
 import React from "react";
 import {FontAwesome} from "@expo/vector-icons";
 
-const RecipeDetails = ({navigation}) =>{
+const RecipeDetails = ({navigation, route}) =>{
+    const { item }= route.params;
+
+    console.log(item);
     return (
         <View style={{backgroundColor:"#6f4e37", flex: 1}}>
             <SafeAreaView style={{flexDirection:"row", marginHorizontal:25, marginVertical:25}}>
@@ -33,7 +36,8 @@ const RecipeDetails = ({navigation}) =>{
                     left:30,
                 }}>
                     <Image
-                        source={require('../../assets/images/HotDog.jpg')}
+                        /*source={require('../../assets/images/HotDog.jpg')}*/
+                        source={item.image}
                         style={{width:"100%", height:"100%", resizeMode:"contain"}}/>
                 </View>
             </View>
