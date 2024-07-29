@@ -53,18 +53,18 @@ export const recipeList = [
       difficulty: "Medium",
       calories: "420 cal",
         color:"#f39c12",
-        ingredients:["1 lb Ahi Tuna fresh, sushi grade tuna fillet\n" +
-        "Ahi Tuna Marinade\n" +
-        "1 teaspoon ginger grated\n" +
-        "1 teaspoon garlic grated\n" +
-        "11/2 Tablespoon soy sauce\n" +
-        "1 teaspoon lime juice\n" +
-        "2 tablespoons sweet chilli sauce\n" +
-        "2 teaspoons cilantro minced\n" +
-        "2 tablespoons scallions minced\n" +
-        "1 tablespoon sesame oil\n" +
-        "1 teaspoon Sriracha sauce optional\n" +
-        "3 tablespoons sesame seeds mixed white and black sesame"],
+        ingredients:["1 lb Ahi Tuna fresh, sushi grade tuna fillet",
+            "Ahi Tuna Marinade",
+        "1 teaspoon ginger grated",
+        "1 teaspoon garlic grated",
+        "11/2 Tablespoon soy sauce",
+        "1 teaspoon lime juice",
+        "2 tablespoons sweet chilli sauce",
+        "2 teaspoons cilantro minced",
+        "2 tablespoons scallions minced",
+        "1 tablespoon sesame oil",
+        "1 teaspoon Sriracha sauce optional",
+        "3 tablespoons sesame seeds mixed white and black sesame",],
         description:"If you love tuna, then you're going to love this recipe for Tuna tartare. This dish is made with fresh ahi tuna and a delicious Asian sauce that will tantalize your taste buds. Layered with flavored chunks of avocado, this tuna recipe & video ate a MUST try! ",
         steps:[
             "1. Make sure you pat the tuna fillet dry using a paper towel.\n"+

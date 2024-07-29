@@ -1,4 +1,4 @@
-import {Image, Pressable, SafeAreaView, StyleSheet, Text, View} from "react-native";
+import {ScrollView, Image, Pressable, SafeAreaView, StyleSheet, Text, View} from "react-native";
 import React from "react";
 import {FontAwesome} from "@expo/vector-icons";
 
@@ -7,7 +7,7 @@ const RecipeDetails = ({navigation, route}) =>{
 
     console.log(item);
     return (
-        <View style={{backgroundColor:item.color, flex: 1}}>
+        <ScrollView style={{backgroundColor:item.color, flex: 1}}>
             <SafeAreaView style={{flexDirection:"row", marginHorizontal:25, marginVertical:25}}>
                 <Pressable style={{flex:1}} onPress={() => navigation.goBack()}>
                     <FontAwesome
@@ -61,11 +61,17 @@ const RecipeDetails = ({navigation, route}) =>{
                     {item.description}
                 </Text>
                 {/*Recipe Extra details*/}
-                <View style={{flexDirection:"row"}}>
+                <View
+                    style={{
+                        flexDirection:"row",
+                        justifyContent:"space-between",
+                        width:"100%",
+                        //backgroundColor:"green"
+                }}>
                     <View
                         style={{
-                            backgroundColor:"orange",
-                            paddingHorizontal:26,
+                            backgroundColor:"rgba(255, 165, 0, 0.48)",
+                            paddingHorizontal:16,
                             paddingVertical:26,
                             borderRadius:8,
                             alignItems:"center",
@@ -76,8 +82,8 @@ const RecipeDetails = ({navigation, route}) =>{
                     </View>
                     <View
                         style={{
-                            backgroundColor:"orange",
-                            paddingHorizontal:26,
+                            backgroundColor:"rgba(255, 0, 0, 0.38)",
+                            paddingHorizontal:16,
                             paddingVertical:26,
                             borderRadius:8,
                             alignItems:"center",
@@ -88,8 +94,8 @@ const RecipeDetails = ({navigation, route}) =>{
                     </View>
                     <View
                         style={{
-                            backgroundColor:"orange",
-                            paddingHorizontal:26,
+                            backgroundColor:"rgba(135, 206, 235, 0.8)",
+                            paddingHorizontal:16,
                             paddingVertical:26,
                             borderRadius:8,
                             alignItems:"center",
@@ -100,10 +106,40 @@ const RecipeDetails = ({navigation, route}) =>{
                     </View>
 
                 </View>
+                {/*Recipe ingredients*/}
+                <View style={{alignSelf:"flex-start", marginVertical:22}}>
+                    <Text style={{fontSize:22, fontWeight:"600", marginBottom:6}}>Ingredients:</Text>
+                    {item.ingredients.map((ingredient)=>{
+                        return(
+                        <View
+                            style={{
+                                flexDirection:"row",
+                                alignItems:"center",
+                                marginVertical:4,
+                            }}>
+                            <View
+                                style={{
+                                    backgroundColor:"red",
+                                    height:10,
+                                    width:10,
+                                    borderRadius:5
+                            }}>
+                            </View>
+                            <Text
+                                style={{
+                                    fontSize:18,
+                                    marginLeft:6 }}>
+                                {ingredient}
+                            </Text>
+                        </View>
+                        );
+                    })}
+
+                </View>
 
             </View>
 
-        </View>
+        </ScrollView>
     );
 };
 
