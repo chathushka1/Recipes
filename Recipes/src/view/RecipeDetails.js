@@ -1,9 +1,21 @@
-import {Image, StyleSheet, Text, View} from "react-native";
+import {Image, Pressable, SafeAreaView, StyleSheet, Text, View} from "react-native";
 import React from "react";
+import {FontAwesome} from "@expo/vector-icons";
 
-const RecipeDetails = () =>{
+const RecipeDetails = ({navigation}) =>{
     return (
         <View style={{backgroundColor:"#6f4e37", flex: 1}}>
+            <SafeAreaView style={{flexDirection:"row", marginHorizontal:25, marginVertical:25}}>
+                <Pressable style={{flex:1}} onPress={() => navigation.goBack()}>
+                    <FontAwesome
+                        name={"arrow-circle-left"}
+                        size={28}
+                        color="black"
+                        />
+                </Pressable>
+
+                <FontAwesome name={"heart-o"} size={28} color="black"/>
+            </SafeAreaView>
             <View
                 style={{
                     backgroundColor:"#fff",
