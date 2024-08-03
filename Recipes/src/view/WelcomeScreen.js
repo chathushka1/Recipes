@@ -5,7 +5,11 @@ const WelcomeScreen = ({ navigation }) =>{
     return (
         <View style={{ flex: 1, alignItems: "center",}}>
             {/*<Text>WelcomeScreen</Text>*/}
-            <Image source={require("../../assets/images/Lady.jpg")}></Image>
+            <Image style={{
+                width:"100%",
+                height:"60%"
+            }}
+                source={require("../../assets/images/chefWomen.png")}></Image>
             <Text style={{color:"#f96163", fontSize:22, fontWeight: "bold",}}>New Recipes</Text>
             <Text style={{
                 fontSize:42,

@@ -18,7 +18,7 @@ const RecipeList = () =>{
             {/*Categories filter*/}
 
             <View style={{marginTop: 22}}>
-                <Text style={{fontSize:22, fontWeight:"bold",}}>Categories</Text>
+                <Text style={{fontSize:22, fontWeight:"bold",marginLeft:10,}}>Categories</Text>
                 {/*Categories List*/}
                 <CategoriesFilter />
             </View>
@@ -26,7 +26,7 @@ const RecipeList = () =>{
                 {/*Recipe List Filter*/}
 
             <View>
-                <Text style={{fontSize:22, fontWeight:"bold",}}>Recipes</Text>
+                <Text style={{fontSize:22, fontWeight:"bold",marginLeft:10,}}>Recipes</Text>
             </View>
             <ScrollView style={{marginTop: 22}}>
                 {/*<Text style={{fontSize:22, fontWeight:"bold",}}>Recipes</Text>*/}

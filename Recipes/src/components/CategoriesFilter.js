@@ -18,7 +18,7 @@ const CategoriesFilter = () =>{
                           shadowOffset:{width:0, height:4},
                           shadowOpacity:0.1,
                           shadowRadius:7,
-                          marginVertical:16,
+                          marginVertical:16, marginLeft:10,
                           }}>
                           <Text style={{color: index ===0 && colors.COLOR_LIGHT,
                               fontSize: 18,

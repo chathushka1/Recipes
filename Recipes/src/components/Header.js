@@ -4,7 +4,7 @@ import {FontAwesome} from "@expo/vector-icons";
 
 const Header = ({headerText, headerIcon}) =>{
     return (
-        <View style={{flexDirection: "row"}}>
+        <View style={{flexDirection: "row", marginLeft:10,}}>
         <Text style={{flex: 1, fontSize: 22, fontWeight: "700"}}>
             {headerText}
         </Text>

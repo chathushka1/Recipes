@@ -22,9 +22,9 @@ const RecipeCard = ({headerText, headerIcon}) =>{
                         borderRadius: 16,
                         marginVertical:16,
                         alignItems: "center",
-                        paddingHorizontal: 8,
+                        paddingHorizontal: 10,
                         paddingVertical: 26,
-                        marginTop:20,
+                        marginTop:20, marginLeft:10,
 
                     }}>
                         <Image

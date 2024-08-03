@@ -7,7 +7,7 @@ const RecipeDetails = ({navigation, route}) =>{
 
     console.log(item);
     return (
-        <ScrollView style={{backgroundColor:item.color, flex: 1}}>
+        <ScrollView style={{backgroundColor:item.color, flex:1,}}>
             <SafeAreaView style={{flexDirection:"row", marginHorizontal:25, marginVertical:25}}>
                 <Pressable style={{flex:1}} onPress={() => navigation.goBack()}>
                     <FontAwesome
@@ -23,7 +23,7 @@ const RecipeDetails = ({navigation, route}) =>{
                 style={{
                     backgroundColor:"#fff",
                     flex: 1,
-                    marginTop:240,
+                    marginTop:100,
                     borderTopLeftRadius:56,
                     borderTopRightRadius:56,
                     alignItems:"center",
@@ -140,7 +140,7 @@ const RecipeDetails = ({navigation, route}) =>{
                 {/*Recipe Steps*/}
                 <View style={{alignSelf:"flex-start", marginVertical:22}}>
                     <Text style={{fontSize:22, fontWeight:"600", marginBottom:6}}>Steps:</Text>
-                    {item.steps.map((step)=>{
+                    {item.steps.map((step, index)=>{
                         return(
                             <View
                                 style={{
@@ -148,19 +148,21 @@ const RecipeDetails = ({navigation, route}) =>{
                                     alignItems:"center",
                                     marginVertical:4,
                                 }}>
-                                <View
+                                {/*<View
                                     style={{
                                         backgroundColor:"green",
                                         height:10,
                                         width:10,
                                         borderRadius:5
                                     }}>
-                                </View>
+                                </View>*/}
                                 <Text
                                     style={{
                                         fontSize:18,
-                                        marginLeft:6 }}>
-                                    {step}
+                                        marginLeft:6,
+                                        marginVertical:4
+                                }}>
+                                    {`${index+1})${step}`}
                                 </Text>
                             </View>
                         );
